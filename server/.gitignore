@@ -1,0 +1,9 @@
+# Go backend artifacts
+bin/
+/server
+*.test
+*.out
+.coverprofile
+
+# Ignore the legacy environment file during setup migration
+.env.local
