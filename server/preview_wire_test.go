@@ -86,10 +86,9 @@ func TestOpenAIGPTLiveStandardClientPreviewWireShape(t *testing.T) {
 		"greeting_message": defaultGreeting,
 		"messages":         []any{},
 		"params": map[string]any{
-			"model":          "gpt-live-1-diamond-alpha",
-			"alpha_selector": "quicksilver=v3",
-			"voice":          "cedar",
-			"prompt":         defaultInstructions,
+			"model":  "gpt-live-1",
+			"voice":  "cedar",
+			"prompt": defaultInstructions,
 		},
 	}
 	wantJSON, _ := json.Marshal(want)

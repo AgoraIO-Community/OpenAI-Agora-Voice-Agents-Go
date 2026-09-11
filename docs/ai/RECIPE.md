@@ -4,9 +4,9 @@ Use Agora's Go SDK to place an OpenAI GPT Live voice agent in an Agora channel. 
 
 | Item | Value |
 | --- | --- |
-| SDK | `github.com/AgoraIO/agora-agents-go/v2@v2.8.0` |
+| SDK | `github.com/AgoraIO/agora-agents-go/v2@v2.8.1` |
 | Provider | `openai_gpt_live` |
-| Model | `gpt-live-1-diamond-alpha` |
+| Model | `gpt-live-1` |
 | Voice | `cedar` |
 | Backend | Go and Gin |
 | Web client | Next.js |
@@ -106,7 +106,7 @@ func startAgent(
 		agentkit.WithAudioScenario(agentkit.ParametersAudioScenario("chorus")),
 	).WithMllm(vendors.NewOpenAIGPTLive(vendors.OpenAIGPTLiveOptions{
 		APIKey:          os.Getenv("OPENAI_API_KEY"),
-		Model:           "gpt-live-1-diamond-alpha",
+		Model:           "gpt-live-1",
 		Voice:           "cedar",
 		Prompt:          "You are a concise and helpful voice assistant.",
 		GreetingMessage: "Hello! How can I help?",

@@ -11,7 +11,7 @@
 | Language      | Go 1.23 (Gin) backend + Next.js 16 / React 19 / TypeScript client  |
 | Deploy Target | `client/` as Next.js app with rewrites to a reachable Go service   |
 | Owner         | Agora Conversational AI DevEx                                      |
-| Last Reviewed | 2026-09-10 |
+| Last Reviewed | 2026-09-11 |
 | Recipe Role   | `base`                                                             |
 | Recipe Version| `1.0.0`                                                            |
 | Recipe Status | `experimental`                                                     |

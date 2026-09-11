@@ -13,7 +13,7 @@ client := agentkit.NewAgoraClient(agentkit.AgoraClientOptions{
 
 model, err := vendors.NewOpenAIGPTLive(vendors.OpenAIGPTLiveOptions{
     APIKey:          openAIAPIKey,
-    Model:           "gpt-live-1-diamond-alpha",
+    Model:           "gpt-live-1",
     Voice:           "cedar",
     Prompt:          instructions,
     GreetingMessage: greeting,
