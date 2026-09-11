@@ -27,8 +27,8 @@ func (w *wireRecorder) Do(req *http.Request) (*http.Response, error) {
 }
 
 func TestOpenAIGPTLiveStandardClientPreviewWireShape(t *testing.T) {
-	t.Setenv("AGORA_APP_ID", "0123456789abcdef0123456789abcdef")
-	t.Setenv("AGORA_APP_CERTIFICATE", "fedcba9876543210fedcba9876543210")
+	t.Setenv("AGORA_APP_ID", "00000000000000000000000000000000")
+	t.Setenv("AGORA_APP_CERTIFICATE", "11111111111111111111111111111111")
 	t.Setenv("OPENAI_API_KEY", "test-openai-api-key")
 
 	svc, err := newAgentService()
