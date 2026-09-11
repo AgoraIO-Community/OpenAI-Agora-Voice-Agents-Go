@@ -2,11 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Go](https://img.shields.io/badge/go-%3E%3D1.23-00ADD8)](https://go.dev/)
-[![Agora Agents](https://img.shields.io/badge/agora--agents--go-v2.8.0-099DFD)](https://github.com/AgoraIO/agora-agents-go/releases/tag/v2.8.0)
+[![Agora Agents](https://img.shields.io/badge/agora--agents--go-v2.8.1-099DFD)](https://github.com/AgoraIO/agora-agents-go/releases/tag/v2.8.1)
 
 Build a browser-based voice agent with OpenAI GPT Live and the Agora Conversational AI Engine. A Gin backend starts and stops the agent, while a Next.js client handles microphone audio, playback, live transcripts, state, and latency metrics.
 
-The sample uses the published `github.com/AgoraIO/agora-agents-go/v2` v2.8.0 module and configures GPT Live as one end-to-end multimodal stage.
+The sample uses the published `github.com/AgoraIO/agora-agents-go/v2` v2.8.1 module and configures GPT Live as one end-to-end multimodal stage.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ The sample uses the published `github.com/AgoraIO/agora-agents-go/v2` v2.8.0 mod
 - [pnpm](https://pnpm.io/installation)
 - GNU Make
 - An Agora project with App ID and App Certificate
-- An OpenAI API key with access to `gpt-live-1-diamond-alpha`
+- An OpenAI API key with access to `gpt-live-1`
 
 ## Run locally
 
