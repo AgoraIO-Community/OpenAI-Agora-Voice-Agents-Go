@@ -14,7 +14,6 @@ client := agentkit.NewAgoraClient(agentkit.AgoraClientOptions{
 model, err := vendors.NewOpenAIGPTLive(vendors.OpenAIGPTLiveOptions{
     APIKey:          openAIAPIKey,
     Model:           "gpt-live-1-diamond-alpha",
-    AlphaSelector:   "quicksilver=v3",
     Voice:           "cedar",
     Prompt:          instructions,
     GreetingMessage: greeting,
@@ -28,7 +27,7 @@ agent := agentkit.NewAgent(
 ).WithMllm(model)
 ```
 
-`NewOpenAIGPTLive` emits `mllm.vendor: "openai_gpt_live"`, `wss://api.openai.com/v1/live/sessions`, `params.alpha_selector: "quicksilver=v3"`, and `greeting_message` for the opening line. The selector makes the required v3 OpenAI alpha handshake explicit. Do not add `WithStt`, `WithLlm`, or `WithTts` to this demo.
+`NewOpenAIGPTLive` emits `mllm.vendor: "openai_gpt_live"`, `wss://api.openai.com/v1/live/sessions`, and `greeting_message` for the opening line. Do not add `WithStt`, `WithLlm`, or `WithTts` to this demo.
 
 Required server environment:
 

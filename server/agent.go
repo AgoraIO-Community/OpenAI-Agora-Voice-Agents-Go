@@ -208,7 +208,6 @@ func (s *agentService) start(channelName string, agentUID, userUID int) (*startA
 		WithMllm(vendors.NewOpenAIGPTLive(vendors.OpenAIGPTLiveOptions{
 			APIKey:          s.openAIAPIKey,
 			Model:           "gpt-live-1-diamond-alpha",
-			AlphaSelector:   "quicksilver=v3",
 			Voice:           "cedar",
 			Prompt:          s.instructions,
 			GreetingMessage: s.greeting,
